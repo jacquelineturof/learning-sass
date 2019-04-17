@@ -31,10 +31,8 @@ app.get('/:dataType/:word', async (req, res) => {
                     "X-MaShape-key": process.env.apiKey
                 }
             });
-        // const definitionList = generateList(response.data.results);
-        // res.send(definitionList);
-        
-        // if (dataType === 'definitions') 
+            // Properly format data and send to frontend
+            // Not all data we're recieving has the same structure
         res.send(response.data[dataType]);
     } catch (e) {
         res.send(e.message);
