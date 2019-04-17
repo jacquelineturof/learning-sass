@@ -1,0 +1,16 @@
+.result__list {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    border: .4rem solid $color-secondary;
+    height: 50%;
+    width: 75%;
+    overflow: auto;
+    margin: 1rem;
+
+    &__item {
+        font-size: 1.8rem;
+        font-family: 'Indie Flower', cursive;
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,27 @@
+.btn {
+    margin: 2rem;
+    border-radius: 10rem;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        &:active {
+            transform: translateY(-.1rem);
+            box-shadow: 0 .25rem .5rem rgba($color-black, .2);
+        }
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+}
+
+.btn-form {
+    color: white;
+    background-color: $color-primary;
+    padding: 2% 20%;
+}

@@ -1,0 +1,170 @@
+/* Browser Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.heading-primary--main {
+  display: block;
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  font-size: 6rem;
+  letter-spacing: 3.5rem;
+  text-shadow: 0.2rem 0.2rem #d8b082; }
+
+.heading-primary--sub {
+  display: block;
+  font-family: 'Indie Flower', cursive; }
+
+.bg-video {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+
+.form {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 30%;
+  text-align: center; }
+  .form__checkboxes {
+    height: 50%;
+    width: 40%;
+    margin-top: 3rem; }
+    .form__checkboxes__row {
+      height: 50%;
+      width: 100%;
+      margin: 1rem; }
+
+.input {
+  width: 100%;
+  height: 25%;
+  border-radius: 10rem;
+  font-size: 3rem;
+  border: 2px solid #d8b082;
+  line-height: 1.7; }
+  .input:focus, .input:active {
+    outline: none;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn {
+  margin: 2rem;
+  border-radius: 10rem; }
+  .btn:active, .btn:focus {
+    outline: none; }
+  .btn:active:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); }
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn-form {
+  color: white;
+  background-color: #68a1aa;
+  padding: 2% 20%; }
+
+.result__list {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  border: 0.4rem solid #6f8585;
+  height: 50%;
+  width: 75%;
+  overflow: auto;
+  margin: 1rem; }
+  .result__list__item {
+    font-size: 1.8rem;
+    font-family: 'Indie Flower', cursive;
+    margin: 1rem; }
+
+.checkbox {
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 0.2rem solid #d8b082;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05), inset 0rem -1.5rem 1rem -1.2rem rgba(0, 0, 0, 0.05);
+  padding: .9rem;
+  border-radius: .3rem;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  transform: translateY(-0.25rem);
+  vertical-align: middle; }
+  .checkbox:active, .checkbox:checked:active {
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    outline: none; }
+  .checkbox:checked {
+    background-color: #fff;
+    border: 1px solid #68a1aa;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+    color: #68a1aa;
+    outline: none; }
+    .checkbox:checked:after {
+      content: '\2714';
+      font-size: 1.4rem;
+      position: absolute;
+      top: 0px;
+      left: 3px;
+      color: #6f8585;
+      outline: none; }
+  .checkbox__label {
+    font-size: 1.5rem;
+    margin-right: 1rem; }
+
+.results {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, rgba(111, 133, 133, 0.7), rgba(216, 176, 130, 0.7)), url("../../../backend/public/img/results.jpg");
+  background-size: cover; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
+
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100vw; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
